@@ -6,16 +6,16 @@ A reusable, AI-optimized project scaffolding kit. Each document is structured fo
 
 | Document | Purpose |
 |---|---|
-| [AI-Context.md](AI-Context.md) | Meta-guide telling AI tools how to read this project |
-| [01-Concept.md](01-Concept.md) | Vision, problem statement, goals, target users |
-| [02-PRD.md](02-PRD.md) | Product requirements, features, MVP scope, acceptance criteria |
-| [03-UX-Framework.md](03-UX-Framework.md) | User research, needs discovery, personas, platform selection |
-| [04-Visual-Style-Guide.md](04-Visual-Style-Guide.md) | Colors, typography, spacing, components, design tokens |
-| [05-System-Architecture.md](05-System-Architecture.md) | Tech stack, services, data flow, infrastructure |
-| [06-Data-Model.md](06-Data-Model.md) | Entities, relationships, schema definitions |
-| [07-API-Contract.md](07-API-Contract.md) | Interface definitions, endpoints, protocols |
-| [08-Decision-Log.md](08-Decision-Log.md) | Running record of architectural and design decisions |
-| [09-Process-Guide.md](09-Process-Guide.md) | LLM-led discovery questionnaire to populate all docs |
+| AI-Context.md | Meta-guide telling AI tools how to read this project |
+| 01-Concept.md | Vision, problem statement, goals, target users |
+| 02-PRD.md | Product requirements, features, MVP scope, acceptance criteria |
+| 03-UX-Framework.md | User research, needs discovery, personas, platform choice |
+| 04-Visual-Style-Guide.md | Colors, typography, spacing, components, tokens |
+| 05-System-Architecture.md | Tech stack, services, infra, data flow |
+| 06-Data-Model.md | Entities, relationships, schemas |
+| 07-API-Contract.md | Endpoints, protocols, interface definitions |
+| 08-Decision-Log.md | Why we chose what we chose |
+| 09-Process-Guide.md | LLM-led discovery questionnaire |
 
 ## How to Use
 
