@@ -12,7 +12,23 @@ cd ~/projects/my-new-app
 git init  # optional: start fresh git history
 ```
 
-### 2. Open in your AI coding tool
+### 2. Tell the AI what you're building (optional but recommended)
+
+Before starting, you can tell the AI your project type to skip irrelevant phases:
+
+```
+This is a backend service with no UI.
+```
+
+Or for existing codebases:
+
+```
+I'm adding features to an existing codebase. The code is in /src.
+```
+
+The AI will adjust the discovery flow accordingly. See [Project Types](#project-types) and [Existing Codebases](#existing-codebases) below.
+
+### 3. Open in your AI coding tool
 
 | Tool | Command |
 |------|---------|
@@ -132,6 +148,79 @@ framework-kit/
 | 4 - Architecture | `framework/05-System-Architecture.md`, `06-Data-Model.md`, `07-API-Contract.md` |
 | 5 - Visual Design | `framework/04-Visual-Style-Guide.md` |
 | 6 - MVP & Roadmap | `framework/02-PRD.md` (MVP section), `08-Decision-Log.md` |
+
+---
+
+## Project Types
+
+Not every project needs every phase. At the start of discovery, the AI will ask about your project type and automatically skip irrelevant phases.
+
+### Common Profiles
+
+| Project Type | Phases Used | Phases Skipped |
+|--------------|-------------|----------------|
+| **Full-stack web app** | All | — |
+| **Backend service / API** | Concept, Requirements, Architecture, Data Model, API | UX, Visual Design |
+| **CLI tool** | Concept, Requirements, Architecture | UX (mostly), Visual Design, Data Model (maybe) |
+| **Library / SDK** | Concept, Requirements, Architecture, API | UX, Visual Design |
+| **Mobile app** | All | — |
+| **Data pipeline** | Concept, Requirements, Architecture, Data Model | UX, Visual Design, API (maybe) |
+
+### Telling the AI Your Project Type
+
+At the start, say something like:
+
+- "This is a backend service with no UI"
+- "I'm building a CLI tool"
+- "This is an internal API — no end users"
+
+The AI will confirm which phases to skip and proceed with the relevant ones.
+
+---
+
+## Existing Codebases
+
+This framework isn't just for greenfield projects. You can use it when:
+
+- **Adding a major feature** to an existing app
+- **Refactoring or redesigning** a system
+- **Documenting** an undocumented codebase
+- **Planning v2** of an existing product
+
+### How to Use with Existing Code
+
+1. **Tell the AI about your codebase:**
+   ```
+   I'm adding a new feature to an existing codebase. 
+   The code is in /src. Read it first to understand the current architecture.
+   ```
+
+2. **The AI will:**
+   - Analyze your existing code structure
+   - Pre-fill relevant sections (tech stack, data model, etc.) based on what exists
+   - Focus discovery on the *new* work, not redocumenting everything
+
+3. **Selective documentation:**
+   - You can fill only the docs relevant to your change
+   - e.g., for a new feature: just update PRD + relevant Architecture sections
+   - e.g., for a refactor: focus on Architecture + Decision Log
+
+### Example Prompts for Existing Codebases
+
+```
+I'm adding user authentication to this existing Express app. 
+Let's document the feature using this framework.
+```
+
+```
+I want to document the architecture of this codebase. 
+Read the code and help me fill out the Architecture and Data Model docs.
+```
+
+```
+We're planning a major refactor. Use this framework to document 
+the current state and the proposed changes.
+```
 
 ---
 

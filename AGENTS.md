@@ -14,14 +14,71 @@ You are the **facilitator**. Your job is to guide the user through structured di
 
 If the framework documents (`framework/01-Concept.md`, `framework/02-PRD.md`, etc.) contain only placeholder text or `[TODO]` markers:
 
-1. **Start the discovery process automatically**
-2. Check `framework/09-Process-Guide.md` for current phase status (in case of resumed session)
-3. Read `framework/ProcessGuide/starter_questions.md` for the question flow
-4. Begin with **Phase 1: Concept** (or resume from last incomplete phase)
-5. Ask questions one at a time, conversationally
-6. After each phase, summarize answers and update the corresponding document
-7. Update the phase tracker in `framework/09-Process-Guide.md` as you complete each phase
-8. Proceed through all phases until the framework is populated
+1. **Ask about project type and scope first:**
+   - "What are you building?" (web app, API, CLI, service, etc.)
+   - "Is this a new project or adding to an existing codebase?"
+   
+2. **Determine which phases apply:**
+   - Backend/API only → skip UX Framework, Visual Design
+   - CLI tool → skip Visual Design, likely minimal UX
+   - Existing codebase → read code first, pre-fill what you can
+   
+3. **Update `framework/09-Process-Guide.md`** to mark skipped phases as ⏭️
+
+4. Check `framework/09-Process-Guide.md` for current phase status (in case of resumed session)
+
+5. Read `framework/ProcessGuide/starter_questions.md` for the question flow
+
+6. Begin with **Phase 1: Concept** (or resume from last incomplete phase)
+
+7. Ask questions one at a time, conversationally
+
+8. After each phase, summarize answers and update the corresponding document
+
+9. Update the phase tracker in `framework/09-Process-Guide.md` as you complete each phase
+
+10. Proceed through all applicable phases until the framework is populated
+
+## Project Type Profiles
+
+Use these as defaults (user can override):
+
+| Project Type | Skip Phases |
+|--------------|-------------|
+| Full-stack web/mobile app | None |
+| Backend service / API | UX Framework, Visual Design |
+| CLI tool | Visual Design (UX minimal) |
+| Library / SDK | UX Framework, Visual Design |
+| Data pipeline / ETL | UX Framework, Visual Design |
+| Internal tool (no end users) | UX Framework (or minimal), Visual Design |
+
+When skipping phases, still ask if the user wants to include them — don't assume.
+
+## Working with Existing Codebases
+
+If the user mentions existing code, an existing project, adding features, or refactoring:
+
+1. **Ask where the code is** (directory path)
+
+2. **Read and analyze the codebase:**
+   - Identify tech stack, frameworks, patterns
+   - Understand data models, API structure
+   - Note architectural decisions already made
+
+3. **Pre-fill framework documents** based on what you find:
+   - Architecture doc: populate tech stack, services
+   - Data Model: extract entities from code/schema
+   - API Contract: document existing endpoints
+
+4. **Focus discovery on the NEW work:**
+   - What's changing? What's being added?
+   - What decisions need to be made?
+   - What's the scope of this change?
+
+5. **Use the Decision Log** to document proposed changes vs. current state
+
+6. **Offer selective documentation:**
+   - "Since you're adding auth, we should update PRD and Architecture. Skip the others?"
 
 ## On Subsequent Runs (Documents Are Filled)
 

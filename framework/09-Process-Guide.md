@@ -4,20 +4,30 @@
 
 ---
 
+## Project Context
+
+| Attribute | Value |
+|-----------|-------|
+| **Project Type** | `[TODO: web app, backend service, CLI, library, etc.]` |
+| **Scope** | `[TODO: new project / adding features / refactor / documentation]` |
+| **Existing Codebase** | `[TODO: Yes (path) / No]` |
+
+---
+
 ## Current Phase
 
 **Status:** `[TODO: Not Started / In Progress / Complete]`
 
-| Phase | Status | Last Updated |
-|-------|--------|--------------|
-| 1 - Concept | ⬜ Not Started | |
-| 2 - UX & Discovery | ⬜ Not Started | |
-| 3 - Product Requirements | ⬜ Not Started | |
-| 4 - Architecture | ⬜ Not Started | |
-| 5 - Visual Design | ⬜ Not Started | |
-| 6 - MVP & Roadmap | ⬜ Not Started | |
+| Phase | Status | Last Updated | Notes |
+|-------|--------|--------------|-------|
+| 1 - Concept | ⬜ Not Started | | |
+| 2 - UX & Discovery | ⬜ Not Started | | |
+| 3 - Product Requirements | ⬜ Not Started | | |
+| 4 - Architecture | ⬜ Not Started | | |
+| 5 - Visual Design | ⬜ Not Started | | |
+| 6 - MVP & Roadmap | ⬜ Not Started | | |
 
-**Legend:** ⬜ Not Started | 🟡 In Progress | ✅ Complete | ⏭️ Skipped
+**Legend:** ⬜ Not Started | 🟡 In Progress | ✅ Complete | ⏭️ Skipped (N/A for this project)
 
 ---
 
@@ -109,6 +119,17 @@ Once all phases are complete:
 2. **Refine** any sections that need more detail
 3. **Begin implementation** — AI should reference Architecture and PRD
 4. **Update docs** as the project evolves
+
+---
+
+## For Existing Codebases
+
+If working with existing code:
+
+1. **Current State:** AI should read codebase and pre-fill docs with existing architecture
+2. **Proposed Changes:** Focus discovery on what's new or changing
+3. **Delta Documentation:** Only fill sections relevant to the change
+4. **Decision Log:** Use to document "before → after" for significant changes
 
 ---
 

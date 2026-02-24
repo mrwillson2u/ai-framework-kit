@@ -6,6 +6,41 @@
 
 ---
 
+## Phase 0: Project Scoping
+
+**Output → 09-Process-Guide.md (Project Context section)**
+
+*Ask these first to determine which phases apply:*
+
+1. **What are you building?**
+   - Web application
+   - Mobile app
+   - Backend service / API
+   - CLI tool
+   - Library / SDK
+   - Data pipeline
+   - Other: ___
+
+2. **Is this a new project or existing codebase?**
+   - New project (starting from scratch)
+   - Adding features to existing code
+   - Refactoring / redesigning existing system
+   - Documenting existing system
+
+3. **If existing codebase:** Where is the code? (path or repo URL)
+
+4. **Does this project have end users with a UI?**
+   - Yes → include UX & Visual Design phases
+   - No (backend only, internal service, etc.) → skip those phases
+
+5. **Confirm phase selection:**
+   Based on your answers, here are the phases we'll cover: [list]
+   Does this look right, or should we add/remove any?
+
+*After this phase, update `09-Process-Guide.md` with project type and mark skipped phases as ⏭️*
+
+---
+
 ## Phase 1: Concept
 
 **Output → 01-Concept.md**
@@ -102,6 +137,7 @@
 
 | Phase | Questions Feed Into |
 |---|---|
+| 0 - Project Scoping | 09-Process-Guide.md (Project Context) |
 | 1 - Concept | 01-Concept.md |
 | 2 - UX & Discovery | 03-UX-Framework.md |
 | 3 - Product Requirements | 02-PRD.md |
@@ -124,3 +160,17 @@
 - **Skip:** Question doesn't apply to this project — leave section blank or note "N/A"
 - **Defer:** Decision can't be made yet — mark as `[TBD]` with a note on what's blocking
 - Either response is valid; don't force answers that aren't ready
+
+## Working with Existing Codebases
+
+When the user has existing code:
+
+1. **Read the codebase first** before asking architecture questions
+2. **Pre-fill what you can** — tech stack, patterns, data models
+3. **Focus on what's new** — don't re-document everything
+4. **Frame questions as "what's changing"** not "what is it"
+5. **Use Decision Log** to capture before/after for significant changes
+
+Example reframing:
+- Instead of: "What's the tech stack?"
+- Ask: "I see you're using Express + PostgreSQL. Are you keeping that stack or considering changes?"
