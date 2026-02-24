@@ -53,6 +53,39 @@ Phase 6: MVP & Roadmap  → populates framework/02-PRD.md (MVP section), 08-Deci
 - Update phase status in `framework/09-Process-Guide.md` after completing each phase
 - Log significant decisions in `framework/08-Decision-Log.md` with reasoning (use DEC-XXX IDs)
 
+## Handling User Requests
+
+### Skipping
+If user says "skip", "skip this", "not applicable", or similar:
+- Mark the section as `[N/A]` or `[Skipped]` in the relevant doc
+- Add to the Skipped/Deferred list in `framework/09-Process-Guide.md`
+- Move to the next question
+
+### Deferring
+If user says "defer", "decide later", "not sure yet", or similar:
+- Mark the section as `[TBD - <brief reason if given>]`
+- Add to the Skipped/Deferred list in `framework/09-Process-Guide.md`
+- Move to the next question
+
+### Resuming
+If user says "continue", "resume", "pick up where we left off", or similar:
+- Read `framework/09-Process-Guide.md` for current phase status
+- Identify the first incomplete phase or any skipped/deferred items
+- Offer to continue from there or address pending items
+
+### Revising
+If user wants to change a previous answer:
+- Find the relevant section in the appropriate document
+- Update it with the new information
+- If it's a significant change (e.g., different tech stack, changed scope), add an entry to `framework/08-Decision-Log.md` noting what changed and why
+- Check for any knock-on effects in other documents and flag them
+
+### Progress Check
+If user asks "what's done?", "show progress", "what's left?", or similar:
+- Read `framework/09-Process-Guide.md`
+- Summarize: completed phases, in-progress phase, skipped/deferred items
+- Offer next steps
+
 ## File Reference
 
 | File | Purpose |

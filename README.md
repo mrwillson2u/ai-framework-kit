@@ -135,6 +135,45 @@ framework-kit/
 
 ---
 
+## Skipping, Resuming & Revising
+
+### Skipping Questions
+
+Not every question applies to every project. You can:
+
+- Say **"skip"** or **"skip this for now"** — the AI will move on and mark it as skipped
+- Say **"defer"** or **"I'll decide later"** — the AI will mark it `[TBD]` and continue
+
+Skipped/deferred items are tracked in `framework/09-Process-Guide.md` so you can return to them.
+
+### Resuming After a Break
+
+If you close your session and return later:
+
+1. Open the project in your AI tool
+2. Say: **"Let's continue where we left off"** or **"Resume discovery"**
+3. The AI will check `framework/09-Process-Guide.md` for phase status and pick up from there
+
+### Revising Previous Answers
+
+Changed your mind? Need to update something? Just tell the AI:
+
+- **"Go back to Phase 2"** — revisit a specific phase
+- **"I want to change my answer about [topic]"** — AI will find and update the relevant section
+- **"Update the tech stack in the Architecture doc"** — direct edit request
+- **"Let's revisit the user personas"** — reopen a specific area
+
+The AI will update the relevant document(s) and note the change. For significant reversals, it will add an entry to `framework/08-Decision-Log.md` explaining the change.
+
+### Checking Progress
+
+To see what's complete and what's pending:
+
+- Say: **"Show me the current progress"** or **"What's left to do?"**
+- The AI will read `framework/09-Process-Guide.md` and summarize the status
+
+---
+
 ## Customization
 
 - **Edit `framework/ProcessGuide/starter_questions.md`** to add/remove/reorder discovery questions

@@ -78,6 +78,27 @@ Not every question applies to every project. It's okay to:
 
 Tell the AI: "Skip this for now" or "Defer — we'll decide later"
 
+### Skipped / Deferred Items
+
+*(AI updates this list when items are skipped or deferred)*
+
+| Item | Phase | Status | Reason | Resolved |
+|------|-------|--------|--------|----------|
+| *Example: Accessibility requirements* | *2* | *Deferred* | *Need to research WCAG standards* | *⬜* |
+
+**Status:** Skipped (N/A for this project) | Deferred (TBD, will revisit)
+**Resolved:** ⬜ Pending | ✅ Done
+
+---
+
+## Revisions
+
+*(AI logs significant changes to previous answers here)*
+
+| Date | What Changed | Document | Reason |
+|------|--------------|----------|--------|
+| | | | |
+
 ---
 
 ## Post-Discovery
