@@ -12,23 +12,7 @@ cd ~/projects/my-new-app
 git init  # optional: start fresh git history
 ```
 
-### 2. Tell the AI what you're building (optional but recommended)
-
-Before starting, you can tell the AI your project type to skip irrelevant phases:
-
-```
-This is a backend service with no UI.
-```
-
-Or for existing codebases:
-
-```
-I'm adding features to an existing codebase. The code is in /src.
-```
-
-The AI will adjust the discovery flow accordingly. See [Project Types](#project-types) and [Existing Codebases](#existing-codebases) below.
-
-### 3. Open in your AI coding tool
+### 2. Open in your AI coding tool
 
 | Tool | Command |
 |------|---------|
@@ -38,14 +22,16 @@ The AI will adjust the discovery flow accordingly. See [Project Types](#project-
 | **Windsurf** | Open folder in Windsurf |
 | **GitHub Copilot** | Open folder in VS Code with Copilot enabled |
 
-### 3. The AI should automatically start the discovery process
+### 3. The AI will start the discovery process
 
 The AI reads its config file (`CLAUDE.md`, `.cursorrules`, etc.), which redirects to `AGENTS.md`. This instructs it to:
 
-1. Detect that the framework docs are empty
-2. Begin the discovery questionnaire (Phase 1: Concept)
-3. Ask questions one at a time
-4. Populate the documents as you answer
+1. **Ask about your project scope** (Phase 0) — what you're building, new vs. existing code, whether it has a UI
+2. **Skip irrelevant phases** based on your answers (e.g., no Visual Design for a backend service)
+3. **Begin discovery** with Phase 1: Concept
+4. **Ask questions one at a time** and populate documents as you answer
+
+See [Project Types](#project-types) and [Existing Codebases](#existing-codebases) below for more on how scoping works.
 
 ---
 
