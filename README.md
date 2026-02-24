@@ -44,7 +44,7 @@ Read AGENTS.md and follow its instructions.
 Or be more explicit:
 
 ```
-Read AGENTS.md, then ProcessGuide/starter_questions.md. 
+Read AGENTS.md, then framework/ProcessGuide/starter_questions.md. 
 Start the discovery process — ask me the Phase 1 questions.
 ```
 
@@ -72,22 +72,31 @@ Read AGENTS.md and follow its instructions for this project.
 
 ---
 
-## Documents
+## Project Structure
 
-| Document | Purpose |
-|----------|---------|
-| `AGENTS.md` | AI instructions — how to facilitate the discovery process |
-| `AI-Context.md` | Project context for AI tools (file map, cross-references) |
-| `ProcessGuide/starter_questions.md` | Full question set for LLM-led discovery |
-| `01-Concept.md` | Vision, problem statement, goals, target users |
-| `02-PRD.md` | Product requirements, features, MVP scope, acceptance criteria |
-| `03-UX-Framework.md` | User research, needs discovery, personas, platform choice |
-| `04-Visual-Style-Guide.md` | Colors, typography, spacing, components, tokens |
-| `05-System-Architecture.md` | Tech stack, services, infra, data flow |
-| `06-Data-Model.md` | Entities, relationships, schemas |
-| `07-API-Contract.md` | Endpoints, protocols, interface definitions |
-| `08-Decision-Log.md` | Why we chose what we chose |
-| `09-Process-Guide.md` | Overview of the LLM-led discovery process |
+```
+framework-kit/
+├── AGENTS.md                        # AI instructions (canonical)
+├── CLAUDE.md                        # Redirect → AGENTS.md
+├── .cursorrules                     # Redirect → AGENTS.md
+├── .windsurfrules                   # Redirect → AGENTS.md
+├── .github/
+│   └── copilot-instructions.md      # Redirect → AGENTS.md
+├── README.md                        # This file
+└── framework/                       # All framework documents
+    ├── AI-Context.md                # Project context for AI tools
+    ├── 01-Concept.md                # Vision, problem, goals, users
+    ├── 02-PRD.md                    # Product requirements, MVP scope
+    ├── 03-UX-Framework.md           # User research, personas, platform
+    ├── 04-Visual-Style-Guide.md     # Colors, typography, components
+    ├── 05-System-Architecture.md    # Tech stack, services, infra
+    ├── 06-Data-Model.md             # Entities, relationships, schemas
+    ├── 07-API-Contract.md           # Endpoints, protocols, interfaces
+    ├── 08-Decision-Log.md           # Why we chose what we chose
+    ├── 09-Process-Guide.md          # Overview of discovery process
+    └── ProcessGuide/
+        └── starter_questions.md     # Full question set for discovery
+```
 
 ---
 
@@ -103,9 +112,9 @@ Read AGENTS.md and follow its instructions for this project.
 │         ↓                                                       │
 │  AI detects empty docs → starts discovery flow                  │
 │         ↓                                                       │
-│  Asks questions from ProcessGuide/starter_questions.md          │
+│  Asks questions from framework/ProcessGuide/starter_questions.md│
 │         ↓                                                       │
-│  Populates framework docs as you answer                         │
+│  Populates framework/ docs as you answer                        │
 │         ↓                                                       │
 │  Docs filled → AI shifts to implementation mode                 │
 └─────────────────────────────────────────────────────────────────┘
@@ -117,20 +126,20 @@ Read AGENTS.md and follow its instructions for this project.
 
 | Phase | Questions Feed Into |
 |-------|---------------------|
-| 1 - Concept | `01-Concept.md` |
-| 2 - UX & Discovery | `03-UX-Framework.md` |
-| 3 - Product Requirements | `02-PRD.md` |
-| 4 - Architecture | `05-System-Architecture.md`, `06-Data-Model.md`, `07-API-Contract.md` |
-| 5 - Visual Design | `04-Visual-Style-Guide.md` |
-| 6 - MVP & Roadmap | `02-PRD.md` (MVP section), `08-Decision-Log.md` |
+| 1 - Concept | `framework/01-Concept.md` |
+| 2 - UX & Discovery | `framework/03-UX-Framework.md` |
+| 3 - Product Requirements | `framework/02-PRD.md` |
+| 4 - Architecture | `framework/05-System-Architecture.md`, `06-Data-Model.md`, `07-API-Contract.md` |
+| 5 - Visual Design | `framework/04-Visual-Style-Guide.md` |
+| 6 - MVP & Roadmap | `framework/02-PRD.md` (MVP section), `08-Decision-Log.md` |
 
 ---
 
 ## Customization
 
-- **Edit `ProcessGuide/starter_questions.md`** to add/remove/reorder discovery questions
+- **Edit `framework/ProcessGuide/starter_questions.md`** to add/remove/reorder discovery questions
 - **Edit `AGENTS.md`** to change AI behavior or add project-specific instructions
-- **Add new documents** as needed — just update `AI-Context.md` with the file map
+- **Add new documents** to `framework/` as needed — update `framework/AI-Context.md` with the file map
 
 ---
 

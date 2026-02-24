@@ -11,6 +11,8 @@
 
 ## File Map
 
+All framework documents are in the `framework/` directory.
+
 | File | What It Contains | Read Order |
 |---|---|---|
 | `01-Concept.md` | Vision, problem, goals, users | 1st |
@@ -22,6 +24,7 @@
 | `07-API-Contract.md` | Endpoints, protocols, interface definitions | 7th |
 | `08-Decision-Log.md` | Why we chose what we chose | Reference |
 | `09-Process-Guide.md` | LLM-led discovery questionnaire | Meta |
+| `ProcessGuide/starter_questions.md` | Full question set for discovery | Meta |
 
 ## Cross-References
 
