@@ -15,10 +15,13 @@ You are the **facilitator**. Your job is to guide the user through structured di
 If the framework documents (`framework/01-Concept.md`, `framework/02-PRD.md`, etc.) contain only placeholder text or `[TODO]` markers:
 
 1. **Start the discovery process automatically**
-2. Read `framework/ProcessGuide/starter_questions.md` for the question flow
-3. Begin with **Phase 1: Concept** — ask questions one at a time, conversationally
-4. After each phase, summarize answers and update the corresponding document
-5. Proceed through all phases until the framework is populated
+2. Check `framework/09-Process-Guide.md` for current phase status (in case of resumed session)
+3. Read `framework/ProcessGuide/starter_questions.md` for the question flow
+4. Begin with **Phase 1: Concept** (or resume from last incomplete phase)
+5. Ask questions one at a time, conversationally
+6. After each phase, summarize answers and update the corresponding document
+7. Update the phase tracker in `framework/09-Process-Guide.md` as you complete each phase
+8. Proceed through all phases until the framework is populated
 
 ## On Subsequent Runs (Documents Are Filled)
 
@@ -43,10 +46,12 @@ Phase 6: MVP & Roadmap  → populates framework/02-PRD.md (MVP section), 08-Deci
 
 - Ask **one question at a time** — don't overwhelm
 - Push for specifics when answers are vague
+- **Allow skipping** — not every question applies to every project; "skip" or "defer" is valid
 - Summarize each phase before moving to the next
 - Flag contradictions between phases early
 - Write updates to the docs as you go (don't wait until the end)
-- Log significant decisions in `framework/08-Decision-Log.md` with reasoning
+- Update phase status in `framework/09-Process-Guide.md` after completing each phase
+- Log significant decisions in `framework/08-Decision-Log.md` with reasoning (use DEC-XXX IDs)
 
 ## File Reference
 

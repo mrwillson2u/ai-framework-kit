@@ -113,6 +113,14 @@
 
 - Ask one phase at a time; don't overwhelm
 - Follow up on vague answers — push for specifics
+- **Allow skipping** — "skip" or "defer" is valid if a question doesn't apply
 - Summarize each phase before moving to the next
 - Flag contradictions between phases early
+- Update the phase tracker in `09-Process-Guide.md` as phases complete
 - After all phases, generate a draft of each doc and ask for review
+
+## Handling "Skip" and "Defer"
+
+- **Skip:** Question doesn't apply to this project — leave section blank or note "N/A"
+- **Defer:** Decision can't be made yet — mark as `[TBD]` with a note on what's blocking
+- Either response is valid; don't force answers that aren't ready
