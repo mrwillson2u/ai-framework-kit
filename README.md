@@ -143,6 +143,19 @@ framework-kit/
 
 ---
 
+## Example: TaskFlow
+
+See `examples/task-app/` for a **fully completed example** of the framework in action. It demonstrates:
+
+- A task management app for freelancers with time tracking
+- All documents filled out with real content
+- Architectural decisions documented with rationale
+- Modern tech stack (Next.js, Supabase, Vercel)
+
+Browse the example to understand what "done" looks like before starting your own project.
+
+---
+
 ## License
 
 MIT — use freely, modify as needed.
