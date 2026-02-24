@@ -143,6 +143,27 @@ If user asks "what's done?", "show progress", "what's left?", or similar:
 - Summarize: completed phases, in-progress phase, skipped/deferred items
 - Offer next steps
 
+## Generating UI Prompts
+
+After UX Framework (Phase 2) and Visual Style Guide (Phase 5) are complete, offer to generate a UI prompt:
+
+> "Would you like me to generate a prompt for UI design tools like Google Stitch or v0?"
+
+If yes:
+
+1. Read `framework/03-UX-Framework.md` and `framework/04-Visual-Style-Guide.md`
+2. Read `framework/02-PRD.md` for feature list
+3. Read `framework/01-Concept.md` for context
+4. Generate a structured prompt following the template in `framework/10-UI-Generation-Prompt.md`
+5. Write the generated prompt to that file
+6. Update the "Generation Status" field
+
+The prompt should be:
+- **Self-contained** — works without needing to read other docs
+- **Specific** — includes actual colors, fonts, features (not placeholders)
+- **Actionable** — ready to paste into a UI generation tool
+- **Flexible** — includes options for what to generate (full app, single screen, etc.)
+
 ## File Reference
 
 | File | Purpose |

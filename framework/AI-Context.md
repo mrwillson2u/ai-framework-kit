@@ -30,6 +30,7 @@ All framework documents are in the `framework/` directory.
 | `07-API-Contract.md` | Endpoints, protocols, interface definitions | 7th |
 | `08-Decision-Log.md` | Why we chose what we chose | Reference |
 | `09-Process-Guide.md` | Phase tracker and discovery overview | Meta |
+| `10-UI-Generation-Prompt.md` | Generated prompt for UI design tools | Output |
 | `ProcessGuide/starter_questions.md` | Full question set for discovery | Meta |
 
 ---

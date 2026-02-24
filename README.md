@@ -110,6 +110,7 @@ framework-kit/
     ├── 07-API-Contract.md           # Endpoints, protocols, interfaces
     ├── 08-Decision-Log.md           # Why we chose what we chose
     ├── 09-Process-Guide.md          # Overview of discovery process
+    ├── 10-UI-Generation-Prompt.md   # Generated prompt for UI tools
     └── ProcessGuide/
         └── starter_questions.md     # Full question set for discovery
 ```
@@ -260,6 +261,27 @@ To see what's complete and what's pending:
 
 - Say: **"Show me the current progress"** or **"What's left to do?"**
 - The AI will read `framework/09-Process-Guide.md` and summarize the status
+
+---
+
+## UI Generation Prompts
+
+After completing the UX Framework and Visual Style Guide, you can generate a prompt optimized for UI design tools:
+
+```
+Generate a UI prompt for this project.
+```
+
+The AI will create a self-contained prompt in `framework/10-UI-Generation-Prompt.md` that you can paste into:
+
+- **Google Stitch** — Full app generation
+- **Vercel v0** — React/Next.js components
+- **Galileo AI** — Multi-screen flows
+- **Figma AI** — Design system generation
+
+The generated prompt includes everything the UI tool needs: user context, screens, visual style, colors, typography, and features.
+
+See `examples/task-app/framework/10-UI-Generation-Prompt.md` for a complete example.
 
 ---
 
