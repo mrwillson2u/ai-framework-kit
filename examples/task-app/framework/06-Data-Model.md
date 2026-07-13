@@ -199,7 +199,7 @@ Not needed for MVP (just boolean `completed`). If we add more states:
 | Attribute | Value |
 |-----------|-------|
 | **Database** | PostgreSQL 15 |
-| **Rationale** | Supabase default, strong RLS, relational model fits *(DEC-001)* |
+| **Rationale** | Supabase default, strong RLS, relational model fits *(DEC-004)* |
 | **Hosting** | Supabase managed |
 | **Backup Strategy** | Supabase daily backups (Pro plan) |
 

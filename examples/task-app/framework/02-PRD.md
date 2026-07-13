@@ -38,6 +38,18 @@ TaskFlow is a focused task management web app for freelancers and small teams. I
 
 ---
 
+## Post-Ship Backlog
+
+Scope additions that don't block the SPV land here (see Ship Discipline in `AGENTS.md`):
+
+| Feature / Idea | Added | Why It Can Wait |
+|----------------|-------|-----------------|
+| Recurring tasks | 2025-02-20 | Core loop works without them; design question still open |
+| Google Calendar sync | 2025-02-20 | Integration, not core value; revisit after retention data |
+| Dark mode | 2025-02-20 | Planned v1.1 (see Visual Style Guide) |
+
+---
+
 ## Feature Details
 
 ### Feature 1: Task Management
@@ -145,7 +157,7 @@ TaskFlow is a focused task management web app for freelancers and small teams. I
 | Projects + Today View | Week 4 | Organization and focus |
 | Time Tracking | Week 6 | Timer and time entries |
 | Offline + Weekly Review | Week 7 | Polish features |
-| MVP Launch | Week 8 | Public beta |
+| SPV Ships (MVP Launch) | Week 8 — 2025-04-17 | Public beta, live at taskflow.app (matches Ship Target in 09-Process-Guide.md) |
 
 ---
 

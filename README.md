@@ -1,6 +1,8 @@
 # Project Kickoff Framework
 
-A reusable, AI-optimized project scaffolding kit. Each document is structured for efficient LLM ingestion and iterative AI-assisted development.
+A reusable, AI-optimized project scaffolding kit. Each document is structured for efficient LLM ingestion and iterative AI-assisted development — from first idea through a shipped first version.
+
+**Kit version:** 1.1.0 — see [CHANGELOG.md](CHANGELOG.md). Projects record which version they were scaffolded from in `framework/AI-Context.md`.
 
 ## Quick Start
 
@@ -29,7 +31,10 @@ The AI reads its config file (`CLAUDE.md`, `.cursorrules`, etc.), which redirect
 1. **Ask about your project scope** (Phase 0) — what you're building, new vs. existing code, whether it has a UI
 2. **Skip irrelevant phases** based on your answers (e.g., no Visual Design for a backend service)
 3. **Begin discovery** with Phase 1: Concept
-4. **Ask questions one at a time** and populate documents as you answer
+4. **Ask questions one at a time** — or in batches; answer several at once, or say **"take defaults"** to accept sensible defaults and move fast
+5. **Extract a ship target** (Phase 6) — a Smallest Publishable Version and a hard ship date — then help you drive to it (Phase 7)
+
+**Discovery is designed to fit in one sitting** for small/solo projects. Skip and defer freely — planning should never block building.
 
 See [Project Types](#project-types) and [Existing Codebases](#existing-codebases) below for more on how scoping works.
 
@@ -85,6 +90,8 @@ framework-kit/
 ├── .github/
 │   └── copilot-instructions.md      # Redirect → AGENTS.md
 ├── README.md                        # This file
+├── CHANGELOG.md                     # Kit version history
+├── LICENSE                          # MIT
 └── framework/                       # All framework documents
     ├── AI-Context.md                # Project context for AI tools
     ├── 01-Concept.md                # Vision, problem, goals, users
@@ -119,7 +126,11 @@ framework-kit/
 │         ↓                                                       │
 │  Populates framework/ docs as you answer                        │
 │         ↓                                                       │
+│  Phase 6 sets the Ship Target (SPV + ship date)                 │
+│         ↓                                                       │
 │  Docs filled → AI shifts to implementation mode                 │
+│         ↓                                                       │
+│  Phase 7: build and ship the SPV — AI tracks the date           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -129,12 +140,24 @@ framework-kit/
 
 | Phase | Questions Feed Into |
 |-------|---------------------|
+| 0 - Scoping | `framework/09-Process-Guide.md` (Project Context), `AI-Context.md` (Project Summary) |
 | 1 - Concept | `framework/01-Concept.md` |
 | 2 - UX & Discovery | `framework/03-UX-Framework.md` |
 | 3 - Product Requirements | `framework/02-PRD.md` |
 | 4 - Architecture | `framework/05-System-Architecture.md`, `06-Data-Model.md`, `07-API-Contract.md` |
 | 5 - Visual Design | `framework/04-Visual-Style-Guide.md` |
-| 6 - MVP & Roadmap | `framework/02-PRD.md` (MVP section), `08-Decision-Log.md` |
+| 6 - MVP & Roadmap | `framework/02-PRD.md` (MVP section), `08-Decision-Log.md`, Ship Target in `09-Process-Guide.md` |
+| 7 - Ship | The SPV, live — status tracked in `09-Process-Guide.md` |
+
+### The Ship Phase
+
+Phase 6 ends with a **Smallest Publishable Version (SPV)** — a concrete, checkable definition of the first thing that goes live — and a **hard ship date**. From then on:
+
+- Every session opens with a one-line ship status ("SPV ships 2026-08-01 — 19 days left")
+- New feature ideas that don't block the SPV go to the **Post-Ship Backlog** in the PRD, not the MVP
+- If the date passes, the AI proposes cutting scope — not extending the date
+
+This exists because the most common failure mode of planning frameworks is indefinite planning. The kit's goal is not filled-out documents; it's a shipped SPV.
 
 ---
 
@@ -274,8 +297,9 @@ See `examples/task-app/framework/10-UI-Generation-Prompt.md` for a complete exam
 ## Customization
 
 - **Edit `framework/ProcessGuide/starter_questions.md`** to add/remove/reorder discovery questions
-- **Edit `AGENTS.md`** to change AI behavior or add project-specific instructions
-- **Add new documents** to `framework/` as needed — update `framework/AI-Context.md` with the file map
+- **Edit `AGENTS.md`** to change AI behavior or add project-specific instructions — it is the single canonical home for AI behavior rules; other docs link to it rather than restating rules
+- **Add new documents** to `framework/` as needed — update the reading map in `framework/AI-Context.md`
+- **If you change the kit itself**, update `examples/task-app/` in the same change and note it in `CHANGELOG.md`, so the example always demonstrates the current process
 
 ---
 
@@ -294,4 +318,4 @@ Browse the example to understand what "done" looks like before starting your own
 
 ## License
 
-MIT — use freely, modify as needed.
+MIT — use freely, modify as needed. See [LICENSE](LICENSE).

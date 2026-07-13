@@ -32,6 +32,16 @@ Features explicitly deferred to future releases:
 
 ---
 
+## Post-Ship Backlog
+
+Once the SPV is defined (Phase 6), any scope *addition* that doesn't block the SPV lands here — not in the MVP (see Ship Discipline in `AGENTS.md`). Pull from this list after shipping.
+
+| Feature / Idea | Added | Why It Can Wait |
+|----------------|-------|-----------------|
+| `[TODO]` | YYYY-MM-DD | |
+
+---
+
 ## Feature Details
 
 ### Feature 1: [Name]
@@ -66,7 +76,7 @@ Features explicitly deferred to future releases:
 
 | Milestone | Target Date | Description |
 |-----------|-------------|-------------|
-| MVP Launch | `[TODO]` | |
+| SPV Ships | `[TODO: must match the Ship Target in 09-Process-Guide.md]` | |
 | `[TODO]` | | |
 
 ---

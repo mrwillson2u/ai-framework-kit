@@ -37,6 +37,10 @@ The Decision Log (`08-Decision-Log.md`) captures *why* choices were made, not ju
 
 Each doc has an "Open Questions" section. Questions get answered and struck through, or deferred with notes.
 
+### 5. There's a Ship Target
+
+Discovery ends with a concrete Smallest Publishable Version and a hard ship date at the top of `09-Process-Guide.md` (SPV live at taskflow.app by 2025-04-17). Scope additions that don't block the SPV go to the Post-Ship Backlog in the PRD instead of growing the MVP.
+
 ## Using This Example
 
 1. **Browse the docs** to understand what "complete" looks like
@@ -58,5 +62,6 @@ examples/task-app/
     ├── 06-Data-Model.md         # Database schema
     ├── 07-API-Contract.md       # Endpoints, auth
     ├── 08-Decision-Log.md       # Why we chose what
-    └── 09-Process-Guide.md      # Phase tracker (complete)
+    ├── 09-Process-Guide.md      # Ship target + phase tracker
+    └── 10-UI-Generation-Prompt.md # Generated prompt for UI tools
 ```

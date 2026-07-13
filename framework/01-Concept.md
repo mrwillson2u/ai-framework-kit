@@ -18,6 +18,8 @@ What does the world look like when this is solved?
 
 `[TODO]`
 
+**One-liner:** `[TODO: the project in one sentence — also goes in the Project Summary in AI-Context.md]`
+
 ## Target Users
 
 Who are the primary and secondary users?
@@ -49,7 +51,9 @@ Who are the primary and secondary users?
 
 What exists today? How is this different?
 
-`[TODO]`
+| Competitor | Strengths | Weaknesses | Our Differentiator |
+|---|---|---|---|
+| `[TODO]` | | | |
 
 ## Open Questions
 

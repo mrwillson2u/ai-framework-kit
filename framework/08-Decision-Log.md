@@ -1,7 +1,7 @@
 # Decision Log
 
 > **Purpose:** Record significant architectural, design, and product decisions with context and rationale.
-> Reference entries from other docs using the decision ID (e.g., "see Decision #003").
+> Reference entries from other docs using the decision ID (e.g., "see DEC-003").
 
 ---
 
@@ -24,7 +24,7 @@ For each significant decision:
 | **Date** | YYYY-MM-DD |
 | **Status** | Proposed / Accepted / Superseded / Deprecated |
 | **Deciders** | [Names] |
-| **Category** | Architecture / Tech Stack / Product / UX / Process |
+| **Category** | Architecture / Tech Stack / Product / UX / Process / Scope |
 
 **Context:**
 
@@ -92,7 +92,7 @@ Copy this for new decisions:
 | **Date** | YYYY-MM-DD |
 | **Status** | Proposed / Accepted / Superseded / Deprecated |
 | **Deciders** | [Names] |
-| **Category** | Architecture / Tech Stack / Product / UX / Process |
+| **Category** | Architecture / Tech Stack / Product / UX / Process / Scope |
 
 **Context:**
 [TODO]

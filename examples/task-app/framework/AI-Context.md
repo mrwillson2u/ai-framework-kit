@@ -1,35 +1,41 @@
 # AI-Context.md
 
 > **Purpose:** This is the entry point for any AI tool working on this project.
-> Read this file first to understand the project structure and how to navigate it.
+> The Project Summary below is the **only section that must be read every session** — pull deeper docs on demand using the reading map.
 
 ---
 
-## Project Info
+## Project Summary
 
 | Attribute | Value |
 |-----------|-------|
 | **Project Name** | TaskFlow |
-| **Project Type** | Web application (SaaS) |
-| **Current Phase** | ✅ Complete — Ready for implementation |
+| **Project Type** | Web application (SaaS, PWA) |
+| **One-liner** | The task app that gets out of your way. |
+| **Current Phase** | 🟡 Phase 7: Ship — building the SPV |
+| **SPV** | Auth + task CRUD + projects + Today View + timer, live at taskflow.app |
+| **Ship Date** | 2025-04-17 |
+| **Tech Stack** | Next.js + Tailwind + Zustand, Supabase (PostgreSQL/auth), Vercel |
+| **Top Open Decisions** | Time-entry granularity; recurring-tasks approach (both deferred — see 09-Process-Guide.md) |
+| **Kit Version** | 1.1.0 |
 
 ---
 
-## File Map
+## Reading Map
 
-All framework documents are in the `framework/` directory.
+All framework documents are in the `framework/` directory. Read by task — not front to back:
 
-| File | What It Contains | Read Order |
-|------|------------------|------------|
-| `01-Concept.md` | Vision, problem, goals, users | 1st |
-| `02-PRD.md` | Features, MVP scope, acceptance criteria | 2nd |
-| `03-UX-Framework.md` | User research, personas, platform choice | 3rd |
-| `04-Visual-Style-Guide.md` | Design tokens, colors, typography, components | 4th |
-| `05-System-Architecture.md` | Tech stack, services, infra, data flow | 5th |
-| `06-Data-Model.md` | Entities, relationships, schemas | 6th |
-| `07-API-Contract.md` | Endpoints, protocols, interface definitions | 7th |
-| `08-Decision-Log.md` | Why we chose what we chose | Reference |
-| `09-Process-Guide.md` | Phase tracker and discovery overview | Meta |
+| Task | Read |
+|------|------|
+| Every session | Project Summary above (this file only) |
+| UI / frontend work | `03-UX-Framework.md`, `04-Visual-Style-Guide.md` |
+| API / backend work | `06-Data-Model.md`, `07-API-Contract.md` |
+| Architecture / infra work | `05-System-Architecture.md` |
+| Scope questions ("should we build X?") | `02-PRD.md` (MVP scope + Post-Ship Backlog), Ship Target in `09-Process-Guide.md` |
+| Why was X chosen? | `08-Decision-Log.md` |
+| Product/vision context | `01-Concept.md` |
+| Phase status, skipped/deferred items | `09-Process-Guide.md` |
+| Generating UI-tool prompts | `10-UI-Generation-Prompt.md` |
 
 ---
 
@@ -39,18 +45,18 @@ All framework documents are in the `framework/` directory.
 - PRD features map to API endpoints in `07-API-Contract.md`
 - Data Model entities are referenced in both Architecture and API docs
 - Visual Style Guide tokens are used in UX Framework component specs
+- Phase progress and the Ship Target are tracked in `09-Process-Guide.md`
 
 ---
 
 ## AI Instructions
 
-### Implementation Mode
+Facilitation and behavior rules live in **`AGENTS.md`** (canonical). Discovery is complete — this project is in Phase 7 (Ship). When implementing:
 
-All discovery phases are complete. When implementing:
-
+- Open each session by stating ship status in one line (days to 2025-04-17)
 - Follow the tech stack defined in `05-System-Architecture.md` (Next.js, Supabase, Vercel)
 - Follow tokens and patterns in `04-Visual-Style-Guide.md` for UI
-- Check `02-PRD.md` for scope and acceptance criteria before adding features
+- Check `02-PRD.md` for scope before adding features — non-SPV additions go to the Post-Ship Backlog
 - Reference `06-Data-Model.md` and `07-API-Contract.md` for data/API work
 - Log all significant decisions in `08-Decision-Log.md`
 

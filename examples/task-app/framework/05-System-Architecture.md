@@ -64,7 +64,7 @@ TaskFlow is a modern web application built with Next.js and Supabase, deployed o
 | State | Zustand | 4.x | Simple, minimal boilerplate *(DEC-002)* |
 | Database | PostgreSQL (Supabase) | 15.x | Relational, Row Level Security |
 | Auth | Supabase Auth | — | Built-in, handles OAuth, magic links |
-| Backend | Supabase (BaaS) | — | All-in-one: DB, auth, storage |
+| Backend | Supabase (BaaS) | — | All-in-one: DB, auth, storage *(DEC-004)* |
 | Hosting | Vercel | — | Zero-config Next.js deployment |
 | Offline | Service Worker + IndexedDB | — | PWA with background sync |
 | Analytics | Plausible | — | Privacy-friendly, simple |

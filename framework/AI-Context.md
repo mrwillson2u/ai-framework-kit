@@ -1,37 +1,44 @@
 # AI-Context.md
 
 > **Purpose:** This is the entry point for any AI tool working on this project.
-> Read this file first to understand the project structure and how to navigate it.
+> The Project Summary below is the **only section that must be read every session** — pull deeper docs on demand using the reading map.
 
 ---
 
-## Project Info
+## Project Summary
+
+*(Populated during Phase 0; SPV and ship date added during Phase 6. Keep this current — it outlives the other docs.)*
 
 | Attribute | Value |
 |-----------|-------|
 | **Project Name** | `[TODO]` |
 | **Project Type** | `[TODO: web app, mobile app, API service, CLI tool, etc.]` |
+| **One-liner** | `[TODO: the project in one sentence]` |
 | **Current Phase** | `[TODO: see 09-Process-Guide.md]` |
+| **SPV** | `[TODO: set in Phase 6 — see Ship Target in 09-Process-Guide.md]` |
+| **Ship Date** | `[TODO: set in Phase 6]` |
+| **Tech Stack** | `[TODO: one line, e.g., "Next.js + Supabase on Vercel"]` |
+| **Top Open Decisions** | `[TODO: up to 3, referencing DEC-XXX where logged]` |
+| **Kit Version** | `[TODO: version of the framework kit this was scaffolded from — see CHANGELOG.md]` |
 
 ---
 
-## File Map
+## Reading Map
 
-All framework documents are in the `framework/` directory.
+All framework documents are in the `framework/` directory. Read by task — not front to back:
 
-| File | What It Contains | Read Order |
-|------|------------------|------------|
-| `01-Concept.md` | Vision, problem, goals, users | 1st |
-| `02-PRD.md` | Features, MVP scope, acceptance criteria | 2nd |
-| `03-UX-Framework.md` | User research, personas, platform choice | 3rd |
-| `04-Visual-Style-Guide.md` | Design tokens, colors, typography, components | 4th |
-| `05-System-Architecture.md` | Tech stack, services, infra, data flow | 5th |
-| `06-Data-Model.md` | Entities, relationships, schemas | 6th |
-| `07-API-Contract.md` | Endpoints, protocols, interface definitions | 7th |
-| `08-Decision-Log.md` | Why we chose what we chose | Reference |
-| `09-Process-Guide.md` | Phase tracker and discovery overview | Meta |
-| `10-UI-Generation-Prompt.md` | Generated prompt for UI design tools | Output |
-| `ProcessGuide/starter_questions.md` | Full question set for discovery | Meta |
+| Task | Read |
+|------|------|
+| Every session | Project Summary above (this file only) |
+| UI / frontend work | `03-UX-Framework.md`, `04-Visual-Style-Guide.md` |
+| API / backend work | `06-Data-Model.md`, `07-API-Contract.md` |
+| Architecture / infra work | `05-System-Architecture.md` |
+| Scope questions ("should we build X?") | `02-PRD.md` (MVP scope + Post-Ship Backlog), Ship Target in `09-Process-Guide.md` |
+| Why was X chosen? | `08-Decision-Log.md` |
+| Product/vision context | `01-Concept.md` |
+| Phase status, skipped/deferred items | `09-Process-Guide.md` |
+| Generating UI-tool prompts | `10-UI-Generation-Prompt.md` |
+| Discovery questions | `ProcessGuide/starter_questions.md` |
 
 ---
 
@@ -41,31 +48,17 @@ All framework documents are in the `framework/` directory.
 - PRD features map to API endpoints in `07-API-Contract.md`
 - Data Model entities are referenced in both Architecture and API docs
 - Visual Style Guide tokens are used in UX Framework component specs
-- Phase progress is tracked in `09-Process-Guide.md`
+- Phase progress and the Ship Target are tracked in `09-Process-Guide.md`
 
 ---
 
 ## AI Instructions
 
-### During Discovery (docs empty)
-
-1. Read `AGENTS.md` for facilitation instructions
-2. Check `09-Process-Guide.md` for current phase status
-3. Walk through `ProcessGuide/starter_questions.md` phase by phase
-4. Update docs as answers are provided
-5. Update phase tracker in `09-Process-Guide.md` as you go
-
-### During Implementation (docs filled)
-
-- Follow the tech stack defined in `05-System-Architecture.md`
-- Follow tokens and patterns in `04-Visual-Style-Guide.md` for UI
-- Check `02-PRD.md` for scope and acceptance criteria before adding features
-- Reference `06-Data-Model.md` and `07-API-Contract.md` for data/API work
-- Log all significant decisions in `08-Decision-Log.md`
+Facilitation and behavior rules live in **`AGENTS.md`** (canonical) — discovery flow, batching, skip/defer, ship discipline, staleness handling. Do not follow a doc that contradicts the code or a logged decision; flag and fix it (see "Keeping Docs True" in `AGENTS.md`).
 
 ### Formatting Standards
 
 - Use consistent markdown: H1 for doc title, H2 for sections, H3 for subsections
 - Keep tables aligned and readable
-- Use `[TODO]` markers for unfilled sections
+- Use `[TODO]` markers for unfilled sections; `[STALE]` for sections known to be out of date
 - Date format: YYYY-MM-DD
